@@ -2287,14 +2287,14 @@ conf t
    topology base
     redistribute bgp 65000 metric 10000 100 255 1 1500
 	!
- router ospf 1 vrf BSP
+ router ospf 2 vrf BSP
   redistribute bgp 65000 subnets
   !
  router bgp 65000
   address-family ipv4 vrf PNB
    redistribute eigrp 100 metric 1
   address-family ipv4 vrf BSP
-   redistribute ospf 1 metric 1
+   redistribute ospf 2 metric 1
    end
 ~~~
 
@@ -2308,14 +2308,14 @@ conf t
    topology base
     redistribute bgp 65000 metric 10000 100 255 1 1500
 	!
- router ospf 1 vrf BSP
+ router ospf 2 vrf BSP
   redistribute bgp 65000 subnets
   !
  router bgp 65000
   address-family ipv4 vrf PNB
    redistribute eigrp 100 metric 1
   address-family ipv4 vrf BSP
-   redistribute ospf 1 metric 1
+   redistribute ospf 2 metric 1
    end
 ~~~
 

@@ -2235,7 +2235,7 @@ conf t
 ~~~
 !@PE-A
 conf t
- router ospf 1 vrf BSP
+ router ospf 3 vrf BSP
   network 10.1.1.0 0.0.0.3 area 0
   end
 show ip ospf neigh
